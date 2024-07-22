@@ -1,33 +1,34 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mx-auto p-4">
-        <div class="grid grid-cols-3 gap-4 mt-16">
-            <div class=" p-4"><img src="{{ asset('images/webdevelop.png') }}" class=""></div>
-            <div>
-                <img src="{{ asset('images/judul.png') }}" class="">
-            </div>
-            <div class=" p-4"><img src="{{ asset('images/desainer.png') }}" class=""></div>
-
-        </div>
-    </div>
-    <div>
-        <div class="relative flex min-h-screen justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
-            <div class="grid grid-cols-1 gap-4 mt-16">
+    <div class="relative">
+        <img src="{{ asset('images/hiding.png') }}" alt="Background Image"
+            class="absolute inset-0 w-full h-full object-cover z-0">
+        <main class="relative z-10 flex flex-col items-center justify-center h-screen px-20">
+            <div class="grid grid-cols-2">
                 <div>
-                    <img src="/img/beams.jpg" alt=""
-                        class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" width="1308" />
-                    <div
-                        class="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]">
-                    </div>
-                    <div
-                        class="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
-                        <img src="{{ asset('images/CV.png') }}" class="">
+                    <img src="{{ asset('images/judul.png') }}" alt="Judul" class="">
+                    <button class="px-6 py-3 bg-pink-500 text-white font-bold rounded-full hover:bg-pink-600">Read</button>
+                </div>
+            </div>
+        </main>
+        <div>
+            <div class="relative flex min-h-screen justify-center overflow-hidden bg-gray-50">
+                <div class="grid grid-cols-1 gap-4 mt-16">
+                    <div>
+                        <img src="/img/CV.jpg" alt=""
+                            class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" width="1308" />
+                        <div
+                            class="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]">
+                        </div>
+                        <div
+                            class="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+                            <img src="{{ asset('images/CV.png') }}" class="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     </div>
     <div class="container mx-auto p-4 mt-8">
@@ -38,7 +39,7 @@
         </div>
     </div>
     <div class="container mx-auto mt-8">
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid md:grid-cols-4 gap-4">
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                     <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
@@ -48,7 +49,8 @@
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
                             technology acquisitions 2021</h5>
                     </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology
                         acquisitions of 2021 so far, in reverse chronological order.</p>
                     <a href="#"
                         class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -70,7 +72,8 @@
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
                             technology acquisitions 2021</h5>
                     </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology
                         acquisitions of 2021 so far, in reverse chronological order.</p>
                     <a href="#"
                         class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -92,7 +95,8 @@
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
                             technology acquisitions 2021</h5>
                     </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology
                         acquisitions of 2021 so far, in reverse chronological order.</p>
                     <a href="#"
                         class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -114,7 +118,8 @@
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
                             technology acquisitions 2021</h5>
                     </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                        technology
                         acquisitions of 2021 so far, in reverse chronological order.</p>
                     <a href="#"
                         class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -136,7 +141,8 @@
             </div>
         </div>
         <div class="container mx-auto p-4">
-            <div class="grid grid-cols-2 gap-4 mt-16">
+            <div class="grid md:grid-cols-2 gap-4 mt-16">
+                <div class=" p-4"><img src="{{ asset('images/zaldi.png') }}" class=""></div>
                 <div
                     class="w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-10 dark:bg-gray-800 dark:border-gray-700">
                     <form class="mx-auto">
@@ -174,8 +180,6 @@
                     </form>
 
                 </div>
-
-                <div class=" p-4"><img src="{{ asset('images/zaldi.png') }}" class=""></div>
             </div>
         </div>
     </div>
